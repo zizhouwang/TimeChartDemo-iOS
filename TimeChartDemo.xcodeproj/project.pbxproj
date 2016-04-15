@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A3DA4951CC18561001BB024 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DA4941CC18561001BB024 /* main.m */; };
+		3A3DA4981CC18561001BB024 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DA4971CC18561001BB024 /* AppDelegate.m */; };
+		3A3DA49B1CC18561001BB024 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DA49A1CC18561001BB024 /* ViewController.m */; };
+		3A3DA49E1CC18561001BB024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DA49C1CC18561001BB024 /* Main.storyboard */; };
+		3A3DA4A11CC18561001BB024 /* TimeChartDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DA49F1CC18561001BB024 /* TimeChartDemo.xcdatamodeld */; };
+		3A3DA4A31CC18561001BB024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DA4A21CC18561001BB024 /* Assets.xcassets */; };
+		3A3DA4A61CC18561001BB024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3DA4A41CC18561001BB024 /* LaunchScreen.storyboard */; };
+		3A3DA4B11CC18561001BB024 /* TimeChartDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DA4B01CC18561001BB024 /* TimeChartDemoTests.m */; };
+		3A3DA4BC1CC18561001BB024 /* TimeChartDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DA4BB1CC18561001BB024 /* TimeChartDemoUITests.m */; };
+		3A3DA4CC1CC185FE001BB024 /* TimeChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DA4CB1CC185FE001BB024 /* TimeChartView.m */; };
+		3A3DA4CF1CC1861B001BB024 /* ShadowBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DA4CE1CC1861B001BB024 /* ShadowBackgroundView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A3DA4AD1CC18561001BB024 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A3DA4881CC18561001BB024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A3DA48F1CC18561001BB024;
+			remoteInfo = TimeChartDemo;
+		};
+		3A3DA4B81CC18561001BB024 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A3DA4881CC18561001BB024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A3DA48F1CC18561001BB024;
+			remoteInfo = TimeChartDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A3DA4901CC18561001BB024 /* TimeChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3DA4941CC18561001BB024 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A3DA4961CC18561001BB024 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A3DA4971CC18561001BB024 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A3DA4991CC18561001BB024 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3A3DA49A1CC18561001BB024 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A3DA49D1CC18561001BB024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A3DA4A01CC18561001BB024 /* TimeChartDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeChartDemo.xcdatamodel; sourceTree = "<group>"; };
+		3A3DA4A21CC18561001BB024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A3DA4A51CC18561001BB024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A3DA4A71CC18561001BB024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3DA4AC1CC18561001BB024 /* TimeChartDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeChartDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3DA4B01CC18561001BB024 /* TimeChartDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeChartDemoTests.m; sourceTree = "<group>"; };
+		3A3DA4B21CC18561001BB024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3DA4B71CC18561001BB024 /* TimeChartDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeChartDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3DA4BB1CC18561001BB024 /* TimeChartDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeChartDemoUITests.m; sourceTree = "<group>"; };
+		3A3DA4BD1CC18561001BB024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3DA4CA1CC185FE001BB024 /* TimeChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeChartView.h; sourceTree = "<group>"; };
+		3A3DA4CB1CC185FE001BB024 /* TimeChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeChartView.m; sourceTree = "<group>"; };
+		3A3DA4CD1CC1861B001BB024 /* ShadowBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowBackgroundView.h; sourceTree = "<group>"; };
+		3A3DA4CE1CC1861B001BB024 /* ShadowBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowBackgroundView.m; sourceTree = "<group>"; };
+		3A3DA4D01CC186C2001BB024 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A3DA48D1CC18561001BB024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3DA4A91CC18561001BB024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3DA4B41CC18561001BB024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A3DA4871CC18561001BB024 = {
+			isa = PBXGroup;
+			children = (
+				3A3DA4921CC18561001BB024 /* TimeChartDemo */,
+				3A3DA4AF1CC18561001BB024 /* TimeChartDemoTests */,
+				3A3DA4BA1CC18561001BB024 /* TimeChartDemoUITests */,
+				3A3DA4911CC18561001BB024 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A3DA4911CC18561001BB024 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DA4901CC18561001BB024 /* TimeChartDemo.app */,
+				3A3DA4AC1CC18561001BB024 /* TimeChartDemoTests.xctest */,
+				3A3DA4B71CC18561001BB024 /* TimeChartDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A3DA4921CC18561001BB024 /* TimeChartDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DA4C91CC185DF001BB024 /* TimeChartView */,
+				3A3DA4961CC18561001BB024 /* AppDelegate.h */,
+				3A3DA4971CC18561001BB024 /* AppDelegate.m */,
+				3A3DA4991CC18561001BB024 /* ViewController.h */,
+				3A3DA49A1CC18561001BB024 /* ViewController.m */,
+				3A3DA4D01CC186C2001BB024 /* Macros.h */,
+				3A3DA49C1CC18561001BB024 /* Main.storyboard */,
+				3A3DA4A21CC18561001BB024 /* Assets.xcassets */,
+				3A3DA4A41CC18561001BB024 /* LaunchScreen.storyboard */,
+				3A3DA4A71CC18561001BB024 /* Info.plist */,
+				3A3DA49F1CC18561001BB024 /* TimeChartDemo.xcdatamodeld */,
+				3A3DA4931CC18561001BB024 /* Supporting Files */,
+			);
+			path = TimeChartDemo;
+			sourceTree = "<group>";
+		};
+		3A3DA4931CC18561001BB024 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DA4941CC18561001BB024 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A3DA4AF1CC18561001BB024 /* TimeChartDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DA4B01CC18561001BB024 /* TimeChartDemoTests.m */,
+				3A3DA4B21CC18561001BB024 /* Info.plist */,
+			);
+			path = TimeChartDemoTests;
+			sourceTree = "<group>";
+		};
+		3A3DA4BA1CC18561001BB024 /* TimeChartDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DA4BB1CC18561001BB024 /* TimeChartDemoUITests.m */,
+				3A3DA4BD1CC18561001BB024 /* Info.plist */,
+			);
+			path = TimeChartDemoUITests;
+			sourceTree = "<group>";
+		};
+		3A3DA4C91CC185DF001BB024 /* TimeChartView */ = {
+			isa = PBXGroup;
+			children = (
+				3A3DA4CA1CC185FE001BB024 /* TimeChartView.h */,
+				3A3DA4CB1CC185FE001BB024 /* TimeChartView.m */,
+				3A3DA4CD1CC1861B001BB024 /* ShadowBackgroundView.h */,
+				3A3DA4CE1CC1861B001BB024 /* ShadowBackgroundView.m */,
+			);
+			name = TimeChartView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A3DA48F1CC18561001BB024 /* TimeChartDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3DA4C01CC18561001BB024 /* Build configuration list for PBXNativeTarget "TimeChartDemo" */;
+			buildPhases = (
+				3A3DA48C1CC18561001BB024 /* Sources */,
+				3A3DA48D1CC18561001BB024 /* Frameworks */,
+				3A3DA48E1CC18561001BB024 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeChartDemo;
+			productName = TimeChartDemo;
+			productReference = 3A3DA4901CC18561001BB024 /* TimeChartDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A3DA4AB1CC18561001BB024 /* TimeChartDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3DA4C31CC18561001BB024 /* Build configuration list for PBXNativeTarget "TimeChartDemoTests" */;
+			buildPhases = (
+				3A3DA4A81CC18561001BB024 /* Sources */,
+				3A3DA4A91CC18561001BB024 /* Frameworks */,
+				3A3DA4AA1CC18561001BB024 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A3DA4AE1CC18561001BB024 /* PBXTargetDependency */,
+			);
+			name = TimeChartDemoTests;
+			productName = TimeChartDemoTests;
+			productReference = 3A3DA4AC1CC18561001BB024 /* TimeChartDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A3DA4B61CC18561001BB024 /* TimeChartDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3DA4C61CC18561001BB024 /* Build configuration list for PBXNativeTarget "TimeChartDemoUITests" */;
+			buildPhases = (
+				3A3DA4B31CC18561001BB024 /* Sources */,
+				3A3DA4B41CC18561001BB024 /* Frameworks */,
+				3A3DA4B51CC18561001BB024 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A3DA4B91CC18561001BB024 /* PBXTargetDependency */,
+			);
+			name = TimeChartDemoUITests;
+			productName = TimeChartDemoUITests;
+			productReference = 3A3DA4B71CC18561001BB024 /* TimeChartDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A3DA4881CC18561001BB024 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = wzzyinqiang;
+				TargetAttributes = {
+					3A3DA48F1CC18561001BB024 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					3A3DA4AB1CC18561001BB024 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3A3DA48F1CC18561001BB024;
+					};
+					3A3DA4B61CC18561001BB024 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3A3DA48F1CC18561001BB024;
+					};
+				};
+			};
+			buildConfigurationList = 3A3DA48B1CC18561001BB024 /* Build configuration list for PBXProject "TimeChartDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A3DA4871CC18561001BB024;
+			productRefGroup = 3A3DA4911CC18561001BB024 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A3DA48F1CC18561001BB024 /* TimeChartDemo */,
+				3A3DA4AB1CC18561001BB024 /* TimeChartDemoTests */,
+				3A3DA4B61CC18561001BB024 /* TimeChartDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A3DA48E1CC18561001BB024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3DA4A61CC18561001BB024 /* LaunchScreen.storyboard in Resources */,
+				3A3DA4A31CC18561001BB024 /* Assets.xcassets in Resources */,
+				3A3DA49E1CC18561001BB024 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3DA4AA1CC18561001BB024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3DA4B51CC18561001BB024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A3DA48C1CC18561001BB024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3DA4A11CC18561001BB024 /* TimeChartDemo.xcdatamodeld in Sources */,
+				3A3DA4CC1CC185FE001BB024 /* TimeChartView.m in Sources */,
+				3A3DA49B1CC18561001BB024 /* ViewController.m in Sources */,
+				3A3DA4981CC18561001BB024 /* AppDelegate.m in Sources */,
+				3A3DA4CF1CC1861B001BB024 /* ShadowBackgroundView.m in Sources */,
+				3A3DA4951CC18561001BB024 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3DA4A81CC18561001BB024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3DA4B11CC18561001BB024 /* TimeChartDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3DA4B31CC18561001BB024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3DA4BC1CC18561001BB024 /* TimeChartDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A3DA4AE1CC18561001BB024 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A3DA48F1CC18561001BB024 /* TimeChartDemo */;
+			targetProxy = 3A3DA4AD1CC18561001BB024 /* PBXContainerItemProxy */;
+		};
+		3A3DA4B91CC18561001BB024 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A3DA48F1CC18561001BB024 /* TimeChartDemo */;
+			targetProxy = 3A3DA4B81CC18561001BB024 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A3DA49C1CC18561001BB024 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A3DA49D1CC18561001BB024 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A3DA4A41CC18561001BB024 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A3DA4A51CC18561001BB024 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A3DA4BE1CC18561001BB024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A3DA4BF1CC18561001BB024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A3DA4C11CC18561001BB024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TimeChartDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wzzyinqiang.TimeChartDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A3DA4C21CC18561001BB024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TimeChartDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wzzyinqiang.TimeChartDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3A3DA4C41CC18561001BB024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TimeChartDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wzzyinqiang.TimeChartDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeChartDemo.app/TimeChartDemo";
+			};
+			name = Debug;
+		};
+		3A3DA4C51CC18561001BB024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TimeChartDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wzzyinqiang.TimeChartDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeChartDemo.app/TimeChartDemo";
+			};
+			name = Release;
+		};
+		3A3DA4C71CC18561001BB024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TimeChartDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wzzyinqiang.TimeChartDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TimeChartDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3A3DA4C81CC18561001BB024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TimeChartDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wzzyinqiang.TimeChartDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TimeChartDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A3DA48B1CC18561001BB024 /* Build configuration list for PBXProject "TimeChartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3DA4BE1CC18561001BB024 /* Debug */,
+				3A3DA4BF1CC18561001BB024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A3DA4C01CC18561001BB024 /* Build configuration list for PBXNativeTarget "TimeChartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3DA4C11CC18561001BB024 /* Debug */,
+				3A3DA4C21CC18561001BB024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A3DA4C31CC18561001BB024 /* Build configuration list for PBXNativeTarget "TimeChartDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3DA4C41CC18561001BB024 /* Debug */,
+				3A3DA4C51CC18561001BB024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A3DA4C61CC18561001BB024 /* Build configuration list for PBXNativeTarget "TimeChartDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3DA4C71CC18561001BB024 /* Debug */,
+				3A3DA4C81CC18561001BB024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3A3DA49F1CC18561001BB024 /* TimeChartDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A3DA4A01CC18561001BB024 /* TimeChartDemo.xcdatamodel */,
+			);
+			currentVersion = 3A3DA4A01CC18561001BB024 /* TimeChartDemo.xcdatamodel */;
+			path = TimeChartDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A3DA4881CC18561001BB024 /* Project object */;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQP-wR-dbZ" customClass="ShadowBackgroundView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhQ-ae-ELo" customClass="TimeChartView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bhQ-ae-ELo" secondAttribute="trailing" id="74d-LE-jNf"/>
+                                    <constraint firstItem="bhQ-ae-ELo" firstAttribute="leading" secondItem="LQP-wR-dbZ" secondAttribute="leading" id="O2V-bN-XfY"/>
+                                    <constraint firstAttribute="bottom" secondItem="bhQ-ae-ELo" secondAttribute="bottom" id="UJ3-I8-fC6"/>
+                                    <constraint firstItem="bhQ-ae-ELo" firstAttribute="top" secondItem="LQP-wR-dbZ" secondAttribute="top" id="gYc-a6-pCe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LQP-wR-dbZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Sp0-2H-Qq4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LQP-wR-dbZ" secondAttribute="bottom" id="k3p-Xj-L8a"/>
+                            <constraint firstItem="LQP-wR-dbZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kUS-mi-kmP"/>
+                            <constraint firstAttribute="trailing" secondItem="LQP-wR-dbZ" secondAttribute="trailing" id="zwe-wY-7K0"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="time_chart_view" destination="bhQ-ae-ELo" id="iK1-wF-2iO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
