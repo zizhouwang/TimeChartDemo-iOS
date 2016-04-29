@@ -10,6 +10,20 @@
 #import <math.h>
 #import "Macros.h"
 
+@interface TimeChartView ()
+
+@property (nonatomic, assign) BOOL start_drawing;
+
+@property (nonatomic, assign) BOOL is_drawing;
+
+@property (nonatomic, assign) CGFloat drawing_time;
+
+@property (nonatomic, strong) NSTimer * draw_timer;
+
+@property (nonatomic, strong) UIButton * time_button;
+
+@end
+
 @implementation TimeChartView
 
 - (id)init {
@@ -43,7 +57,7 @@
 }
 
 - (void)initControl {
-    self.draw_timer = [NSTimer timerWithTimeInterval:0.1f target:self selector:@selector(drawing_round) userInfo:nil repeats:YES];
+    self.draw_time = 60.0f;
     
     
     self.time_button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenWidth)];
@@ -57,7 +71,7 @@
     self.time_button.titleLabel.font = [UIFont systemFontOfSize:40.0f];
     
     
-    [self start_draw_round];
+//    [self start_draw_round];
 }
 
 - (void)drawRect:(CGRect)rect {
@@ -138,7 +152,7 @@
         
         CGContextSetStrokeColorWithColor(context, COLOR_RGBA(89, 233, 214, 1.0f).CGColor);
         
-        CGContextAddArc(context, start_x_coordinate, start_y_coordinate, actual_height / 2.0f * 74.0f / 106.0f, -M_PI_2, -M_PI_2 + self.drawing_time * 2.0f * M_PI / 60.0f, 0);
+        CGContextAddArc(context, start_x_coordinate, start_y_coordinate, actual_height / 2.0f * 74.0f / 106.0f, -M_PI_2, -M_PI_2 + (self.drawing_time * 60.0f / self.draw_time) * 2.0f * M_PI / 60.0f, 0);
     }
     
     //渲染
@@ -151,7 +165,7 @@
     
     CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
     
-    CGFloat angle = self.drawing_time * 2 * M_PI / 60.0f + M_PI * 1.5f;
+    CGFloat angle = (self.drawing_time * 60.0f / self.draw_time) * 2 * M_PI / 60.0f + M_PI * 1.5f;
     
     CGFloat triangle_out_radius = actual_height / 2.0f * 64.0f / 106.0f;
     
@@ -202,13 +216,35 @@
 - (void)start_draw_round {
     self.drawing_time = 0.0f;
     
-    [[NSRunLoop currentRunLoop] addTimer:self.draw_timer forMode:NSDefaultRunLoopMode];
-    
     self.start_drawing = YES;
+    
+    self.is_drawing = YES;
+    
+    
+    self.draw_timer = [NSTimer timerWithTimeInterval:0.1f target:self selector:@selector(drawing_round) userInfo:nil repeats:YES];
+    
+    [[NSRunLoop currentRunLoop] addTimer:self.draw_timer forMode:NSDefaultRunLoopMode];
+}
+
+- (void)stop_draw_round {
+    [self.draw_timer invalidate];
+    
+    self.is_drawing = NO;
+}
+
+- (void)continue_draw_round {
+    if (!self.is_drawing) {
+        self.is_drawing = YES;
+        
+        
+        self.draw_timer = [NSTimer timerWithTimeInterval:0.1f target:self selector:@selector(drawing_round) userInfo:nil repeats:YES];
+        
+        [[NSRunLoop currentRunLoop] addTimer:self.draw_timer forMode:NSDefaultRunLoopMode];
+    }
 }
 
 - (void)drawing_round {
-    if (self.drawing_time > 60.0f) {
+    if (self.drawing_time > self.draw_time) {
         [self.draw_timer invalidate];
         
         self.start_drawing = NO;

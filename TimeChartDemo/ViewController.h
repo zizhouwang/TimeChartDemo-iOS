@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TimeChartView.h"
+#import "Macros.h"
 
 @interface ViewController : UIViewController
 

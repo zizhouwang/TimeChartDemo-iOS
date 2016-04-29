@@ -10,14 +10,16 @@
 
 @interface TimeChartView : UIView
 
-@property (nonatomic, assign) BOOL start_drawing;
+/** 计时器计时时间*/
+@property (nonatomic, assign) CGFloat draw_time;
 
-@property (nonatomic, assign) CGFloat drawing_time;
-
-@property (nonatomic, strong) NSTimer * draw_timer;
-
-@property (nonatomic, strong) UIButton * time_button;
-
+/** 开始绘图 or 开始重新绘图*/
 - (void)start_draw_round;
+
+/** 暂停绘图*/
+- (void)stop_draw_round;
+
+/** 继续绘图*/
+- (void)continue_draw_round;
 
 @end
