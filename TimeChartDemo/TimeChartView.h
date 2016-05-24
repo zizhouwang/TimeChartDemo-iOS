@@ -16,6 +16,9 @@
 /** 开始绘图 or 开始重新绘图*/
 - (void)start_draw_round;
 
+/** 复位计时器*/
+- (void)reset_draw_round;
+
 /** 暂停绘图*/
 - (void)stop_draw_round;
 

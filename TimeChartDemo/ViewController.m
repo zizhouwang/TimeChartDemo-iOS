@@ -22,7 +22,29 @@
     self.time_chart_view.backgroundColor = [UIColor clearColor];
     
     
-    UIButton * continue_button = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, ScreenHeight - 100.0f, ScreenWidth / 2.0f, 100.0f)];
+    UIButton * start_button = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, ScreenHeight - 120.0f, ScreenWidth / 2.0f, 60.0f)];
+    
+    start_button.backgroundColor = [UIColor grayColor];
+    
+    [start_button addTarget:self action:@selector(start_button_clicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [start_button setTitle:@"开始" forState:UIControlStateNormal];
+    
+    [self.view addSubview:start_button];
+    
+    
+    UIButton * reset_button = [[UIButton alloc] initWithFrame:CGRectMake(ScreenWidth / 2.0f, ScreenHeight - 120.0f, ScreenWidth / 2.0f, 60.0f)];
+    
+    reset_button.backgroundColor = [UIColor grayColor];
+    
+    [reset_button addTarget:self action:@selector(reset_button_clicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [reset_button setTitle:@"复位" forState:UIControlStateNormal];
+    
+    [self.view addSubview:reset_button];
+    
+    
+    UIButton * continue_button = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, ScreenHeight - 60.0f, ScreenWidth / 2.0f, 60.0f)];
     
     continue_button.backgroundColor = [UIColor grayColor];
     
@@ -33,7 +55,7 @@
     [self.view addSubview:continue_button];
     
     
-    UIButton * stop_button = [[UIButton alloc] initWithFrame:CGRectMake(ScreenWidth / 2.0f, ScreenHeight - 100.0f, ScreenWidth / 2.0f, 100.0f)];
+    UIButton * stop_button = [[UIButton alloc] initWithFrame:CGRectMake(ScreenWidth / 2.0f, ScreenHeight - 60.0f, ScreenWidth / 2.0f, 60.0f)];
     
     stop_button.backgroundColor = [UIColor grayColor];
     
@@ -45,6 +67,14 @@
     
     
     [self.time_chart_view start_draw_round];
+}
+
+- (void)start_button_clicked:(UIButton*)button {
+    [self.time_chart_view start_draw_round];
+}
+
+- (void)reset_button_clicked:(UIButton*)button {
+    [self.time_chart_view reset_draw_round];
 }
 
 - (void)continue_button_clicked:(UIButton*)button {

@@ -208,7 +208,6 @@
     CGContextDrawPath(context, kCGPathFill);
     
     
-    
     //渲染
     CGContextStrokePath(context);
 }
@@ -221,9 +220,24 @@
     self.is_drawing = YES;
     
     
+    [self.draw_timer invalidate];
+    
+    
     self.draw_timer = [NSTimer timerWithTimeInterval:0.1f target:self selector:@selector(drawing_round) userInfo:nil repeats:YES];
     
     [[NSRunLoop currentRunLoop] addTimer:self.draw_timer forMode:NSDefaultRunLoopMode];
+}
+
+- (void)reset_draw_round {
+    [self.draw_timer invalidate];
+    
+    self.is_drawing = NO;
+    
+    self.drawing_time = 0.0f;
+    
+    [self setNeedsDisplay];
+    
+    [self.time_button setTitle:[NSString stringWithFormat:@"00:00"] forState:UIControlStateNormal];
 }
 
 - (void)stop_draw_round {
